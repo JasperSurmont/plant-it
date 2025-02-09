@@ -138,7 +138,7 @@ public class ApplicationSecurityConfig {
             public void addCorsMappings(CorsRegistry registry) {
                 registry.addMapping("/**")
                         .allowedOrigins(allowedOrigins)
-                        .allowedMethods("GET", "POST", "PUT", "DELETE", "OPTION");
+                        .allowedMethods("GET", "POST", "PUT", "DELETE", "OPTIONS");
             }
         };
     }
